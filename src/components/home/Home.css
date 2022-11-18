@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap');
+.home{
+    height: 100vh; 
+    background-color: var(--black);  
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    padding: 2.5em; 
+}
+
+.home .info {
+    color: var(--white);
+}
+.home .lime {
+    height: 450px;
+    width: 250px;
+    transition: all 0.5s ease;
+}
+.home .info .who{
+    font-size: 20px;
+    font-weight: 600;
+     
+    padding-left: 0.5em;
+    transition: all 0.5s ease;
+}
+
+.home .info .who span{
+    color: var(--blue);
+}
+.home .info .what{
+    font-size: 80px;
+    font-weight: 800;
+    text-transform: uppercase;
+    min-width: 600px;
+    max-width: 600px;
+    transition: all 0.5s ease;
+}
+ .home .info .wannaSee {
+    font-size: 20px;
+    font-weight: 300; 
+    cursor: pointer;
+    text-transform: lowercase;
+    transition: all 0.5s ease; 
+}
+
+.home .info .wannaSee:hover{
+    color: var(--blue) !important;
+    letter-spacing: 1px;
+}
+
+
+@media screen and (min-width: 786px) and (max-width: 955px) {
+    .home .lime {
+        height: 250px;
+        width: 250px;
+        
+    }
+
+    .home .info .what{
+        font-size: 50px; 
+        min-width: 400px;
+        max-width: 400px;
+    }
+}
+
+
+@media screen and (max-width: 785px) and (min-width: 608px){
+    .home .lime {
+        height: 200px;
+        width: 200px;
+    }
+    .home .info .who{
+        font-size: 10px;
+    }
+    .home .info .what{
+        font-size: 40px; 
+        min-width: 300px;
+        max-width: 300px;
+    }
+    
+}
+@media screen and (max-width: 608px) {
+     
+    .home .lime { 
+        position: absolute;
+        height: 500px;
+        width: 500px; 
+        top: 7em; 
+        left: -10em;
+        opacity: 0.3;
+    }
+    .home .info .who{
+        font-size: 10px;
+        z-index: 2;
+    }
+    .home .info .what{
+        font-size: 40px; 
+        min-width: 300px;
+        max-width: 300px;
+        z-index: 2;
+    }
+    .home .info .wannaSee{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .home .info .who{
+        font-size: 10px; 
+    }
+    .home .info .wannaSee{
+        font-size: 10px;
+    }
+    .home .info .what{
+        font-size: 25px; 
+        min-width: 200px;
+        max-width: 200px;
+        z-index: 2;
+    }
+    .home .lime{
+        top: 5em;
+    }
+
+}

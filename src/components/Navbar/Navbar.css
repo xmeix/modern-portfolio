@@ -1,0 +1,79 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+     align-items: center !important;
+ 
+    padding: 1em 4em;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background-color: var(--black);
+}
+.navbar .logo{
+    font-size: 25px; 
+    font-family: 'Pecita';
+} 
+.navbar .links{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    font-size: 13px;
+    text-transform: lowercase;
+    transition: all 0.5s ease-in;
+    
+}
+
+.navbar .links .link{ 
+    transition: all 0.5s ease-in;
+}
+.navbar .links .link:hover{ 
+    font-family: 'Pecita';
+}
+.navbar .menu{  
+    color: var(--white);
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+@media screen and (max-width: 800px) {
+
+    .navbar .logo .logoTitle{
+        color: var(--white) !important;
+        z-index: 99;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 750px){
+    .navbar .links{
+        display: none;
+        position: absolute;
+        right: 4.5em;
+        top: 8vh;
+        flex-direction: column; 
+        box-sizing: border-box;
+        
+        border-radius: 5px;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 25vh;
+        padding-top: 1em;
+        padding-bottom: 2em;
+        font-size: 12px;
+        text-transform: capitalize;
+ 
+    }
+    .navbar .links .link{
+        transform: rotate(-30deg);
+    }
+}
+
+@media screen and (max-width: 320px){
+    .navbar .links{
+        padding: 1em;
+    }
+}
