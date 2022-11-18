@@ -1,5 +1,5 @@
 .about{
-    height: auto; 
+    height: 100vh; 
     padding: 5em;
     display: flex;
     flex-direction: column; 
@@ -27,37 +27,58 @@
 
 
 .about .bioInfo .options{
-    padding:1em 0 0.5em 0  ;
+    padding:1em 0 0.5em 0;
+    display: flex; 
+    font-weight: 500;
 }
 
 
 .about .bioInfo .bio{
     padding: 1em;
-    max-width: 500px;
-    min-width: 300px;
+    max-width: 380px;
+    min-width: 380px;
     text-align: justify;
+    letter-spacing: 1px;
+    line-height: 28px;
 }
 
 input[type="radio"] { 
     -webkit-appearance: none; 
     appearance: none;
     background-color: var(--form-background); 
-    margin:  0 0.5em 0 0.5em; 
+    margin:  0.3em 0.5em 0 0.5em; 
     color: var(--black);
-    width: 0.8em;
-    height: 0.8em;
+    width: 1em;
+    height: 1em;
     border: 2px solid var(--black);
     border-radius: 50%; 
-     place-content: center; 
+    place-content: center; 
   }
   
-  
-  
-  input[type="radio"]:checked{
+   
+  input[type="radio"]:checked,  input[type="radio"]:hover{
     background-color: var(--black); 
 
   }
   
   input[type="radio"]:focus {
     border: 2px solid var(--black);
+  }
+
+  @media screen and (max-width: 500px) {
+    .about .sectionTitle{
+        font-size: 30px;
+        min-width: 180px;
+    }
+    
+.about .bioInfo .bio{
+    font-size: 15px;
+    padding: 1em;
+    max-width:auto;
+    min-width: auto;
+    text-align: justify;
+}
+.about{
+     padding: 1em;
+}
   }

@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;  
     padding: 2.5em; 
+    cursor: default;
 }
 
 .home .info {
@@ -48,6 +49,21 @@
     letter-spacing: 1px;
 }
 
+.home .arrow {
+    padding: 1%;
+    position: absolute;
+    bottom: 1.5em; 
+    right: 45%;
+    color: white;
+    height: 50px;
+    width: 50px;
+    transition: all 0.5s ease;
+
+    
+}
+.home .arrow:hover{
+    transform: translateY(30px);
+}
 
 @media screen and (min-width: 786px) and (max-width: 955px) {
     .home .lime {
@@ -102,6 +118,17 @@
     .home .info .wannaSee{
         font-size: 12px;
     }
+    .home .arrow {
+        right: 2.5em; 
+        bottom: 0.5em;
+        width: 40px;
+        height: 40px;
+        
+    }
+    .home .arrow:hover{
+        transform: translateY(15px);
+    }
+    
 }
 
 @media screen and (max-width: 320px) {

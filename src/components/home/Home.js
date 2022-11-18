@@ -1,5 +1,6 @@
 import './Home.css';
 import lime from "../../media/illustrations/lime.svg";
+import KeyboardArrowDownRoundedIcon from '@mui/icons-material/KeyboardArrowDownRounded';
 import { HashLink } from 'react-router-hash-link';
 const Home = () => {
     return ( 
@@ -14,6 +15,7 @@ const Home = () => {
                 <HashLink to={"#projects"} style={{color: "var(--white)"}}className="wannaSee">Sneak peek some of ma projects?</HashLink>
             </div>
             <img className="lime" src={lime} alt="lime" />
+            <HashLink to={"#about"}><KeyboardArrowDownRoundedIcon className='arrow'/></HashLink>
         </section>
      );
 }
